@@ -32,11 +32,55 @@ const Homepage = ({navigation}) => {
               />
             </TouchableOpacity>
           </View>
+
           <View style={styles.box}>
+            <Image
+              source={require('../../assets/image/ragdoll.png')}
+              style={styles.image1}
+            />
           </View>
           <View style={styles.box}>
+            <Image
+              source={require('../../assets/image/british.png')}
+              style={styles.image2}
+            />
           </View>
           <View style={styles.box}>
+            <Image
+              source={require('../../assets/image/american.png')}
+              style={styles.image3}
+            />
+          </View>
+        </View>
+
+        <View style={styles.contentWrapper3}>
+          <View style={styles.horizontalWrapper2}>
+            <TouchableOpacity onPress={() => navigation.navigate('Homepage')}>
+              <Image
+                source={require('../../assets/image/home.png')}
+                style={[
+                  styles.image,
+                  {width: 45, height: 42, marginLeft: 51, marginTop: 5},
+                ]}
+              />
+            </TouchableOpacity>
+            <View style={{flex: 1, alignItems: 'center'}}>
+              <TouchableOpacity onPress={() => navigation.navigate('Article')}>
+                <Image
+                  source={require('../../assets/image/article.png')}
+                  style={[styles.image, {width: 45, height: 44, marginTop: 5}]}
+                />
+              </TouchableOpacity>
+            </View>
+            <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+              <Image
+                source={require('../../assets/image/profile.png')}
+                style={[
+                  styles.image,
+                  {width: 45, height: 42, marginRight: 45, marginTop: 5},
+                ]}
+              />
+            </TouchableOpacity>
           </View>
         </View>
       </View>
@@ -54,6 +98,13 @@ const styles = StyleSheet.create({
   scrollViewContent: {
     flexGrow: 1,
   },
+  text1: {
+    padding: 20,
+    marginTop: 10,
+    fontSize: 18,
+    fontFamily: 'Poppins-SemiBold',
+    color: '#DD7A7A',
+  },
   text2: {
     padding: 20,
     marginTop: -40,
@@ -61,6 +112,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-regular',
     color: '#DD7A7A',
   },
+
   contentWrapper: {
     flex: -1,
   },
@@ -75,6 +127,7 @@ const styles = StyleSheet.create({
   horizontalWrapper: {
     justifyContent: 'flex-start',
     paddingHorizontal: 20,
+    
   },
   box: {
     flexDirection: 'row',
@@ -83,6 +136,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFD0D0',
     borderRadius: 20,
     marginBottom: 30,
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+  },
+  boxWrapper: {
+    width: '70%',
+    height: 100,
+    backgroundColor: '#F9DADA',
+    borderRadius: 30,
+    marginRight: 50,
     borderBottomWidth: 5,
     borderColor: 'rgba(0, 0, 0, 0.3)',
     shadowColor: '#000',
@@ -103,9 +169,21 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
   },
+  contentWrapper3: {
+    flex: 0.6,
+  },
   horizontalWrapper2: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  image1: {
+    marginTop: -7,
+  },
+  image2: {
+    marginTop: -20,
+  },
+  image3: {
+    marginTop: -11,
   },
   doglogo: {
     width: 32,
