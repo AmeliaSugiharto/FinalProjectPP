@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SplashScreen, NewPage} from '../pages';
+import {SplashScreen, HomePage2} from '../pages';
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -12,8 +12,8 @@ const index = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="NewPage"
-        component={NewPage}
+        name="HomePage2"
+        component={HomePage2}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
