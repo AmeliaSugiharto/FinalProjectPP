@@ -1,14 +1,28 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import {View,  StyleSheet, } from 'react-native';
 
-const Dog1 = () => {
+const Dog1 = ({navigation}) => {
   return (
-    <View>
-      <Text>Dog1</Text>
+    <View style={styles.container}>
+      <View style={styles.containerImage}>
+      </View>
     </View>
-  )
-}
+  );
+};
 
-export default Dog1
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F9DADA', 
+  },
+  containerImage:{
+    flexDirection: 'column',
+    flex: 1,
+    backgroundColor: 'white',
+    height: 830,
+    borderRadius: 50,
+    top: 300,
+  },
+});
 
-const styles = StyleSheet.create({})
+export default Dog1;
