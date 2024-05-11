@@ -12,8 +12,8 @@ const index = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="NewPage"
-        component={NewPage}
+        name="Homepage"
+        component={Homepage}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

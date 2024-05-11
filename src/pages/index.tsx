@@ -1,4 +1,4 @@
 import SplashScreen from './SplashScreen';
-import NewPage from './NewPage';
+import Homepage from './Homepage';
 
-export {SplashScreen, NewPage};
+export {SplashScreen, Homepage};
