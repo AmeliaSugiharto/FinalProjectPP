@@ -32,6 +32,12 @@ const Homepage = ({navigation}) => {
               />
             </TouchableOpacity>
           </View>
+          <View style={styles.box}>
+          </View>
+          <View style={styles.box}>
+          </View>
+          <View style={styles.box}>
+          </View>
         </View>
       </View>
     </ScrollView>
@@ -55,7 +61,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-regular',
     color: '#DD7A7A',
   },
-
   contentWrapper: {
     flex: -1,
   },
@@ -71,6 +76,20 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     paddingHorizontal: 20,
   },
+  box: {
+    flexDirection: 'row',
+    width: '70%',
+    height: 150,
+    backgroundColor: '#FFD0D0',
+    borderRadius: 20,
+    marginBottom: 30,
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+  },
   boxWrapper2: {
     width: '20%',
     height: 50,
@@ -83,6 +102,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
+  },
+  horizontalWrapper2: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   doglogo: {
     width: 32,
