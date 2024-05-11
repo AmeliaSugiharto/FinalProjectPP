@@ -13,7 +13,9 @@ const GetStartedScreen = ({ navigation }) => {
           Caring Together: Your Contribution, Their
         </Text>
         <Text style={styles.text1}>Second Chance</Text>
+        <TouchableOpacity style={styles.buttonContainer} onPress={() => navigation.navigate('SignIn')}>
           <Text style={styles.buttonText}>Get Started >> </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
