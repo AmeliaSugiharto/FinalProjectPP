@@ -16,9 +16,110 @@ const Homepage = ({navigation}) => {
             </View>
           </View>
         </View>
+        <View style={styles.line} />
+        <View style={styles.horizontalWrapper1}>
+          <Image
+            source={require('../../assets/image/user.jpg')}
+            style={[
+              styles.image,
+              {width: 40, height: 40, marginLeft: 51, marginTop: 50},
+            ]}
+          />
+          <TouchableOpacity>
+            <Text
+              style={[
+                styles.username,
+                {
+                  fontSize: 25,
+                  marginTop: 53,
+                  paddingLeft: 30,
+                  fontWeight: 'bold',
+                  color: '#000000',
+                },
+              ]}>
+              username
+            </Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.horizontalWrapper1}>
+          <Image
+            source={require('../../assets/image/call.jpg')}
+            style={[
+              styles.image,
+              {width: 40, height: 40, marginLeft: 51, marginTop: 35},
+            ]}
+          />
+          <TouchableOpacity>
+            <Text
+              style={[
+                styles.username,
+                {
+                  fontSize: 25,
+                  marginTop: 35,
+                  paddingLeft: 30,
+                  fontWeight: 'bold',
+                  color: '#000000',
+                },
+              ]}>
+              contact
+            </Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.horizontalWrapper1}>
+          <Image
+            source={require('../../assets/image/email.jpg')}
+            style={[
+              styles.image,
+              {width: 40, height: 40, marginLeft: 51, marginTop: 35},
+            ]}
+          />
+          <TouchableOpacity>
+            <Text
+              style={[
+                styles.username,
+                {
+                  fontSize: 25,
+                  marginTop: 35,
+                  paddingLeft: 30,
+                  fontWeight: 'bold',
+                  color: '#000000',
+                },
+              ]}>
+              email
+            </Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.line} />
       </View>
       <View style={styles.contentWrapper3} />
-      <View style={styles.horizontalWrapper2} />
+      <View style={styles.horizontalWrapper2}>
+        <TouchableOpacity onPress={() => navigation.navigate('Homepage')}>
+          <Image
+            source={require('../../assets/image/home.png')}
+            style={[
+              styles.image,
+              {width: 40, height: 35, marginLeft: 51, marginBottom: 12},
+            ]}
+          />
+        </TouchableOpacity>
+        <View style={{flex: 1, alignItems: 'center'}}>
+          <TouchableOpacity onPress={() => navigation.navigate('Article')}>
+            <Image
+              source={require('../../assets/image/article.png')}
+              style={[styles.image, {width: 45, height: 35, marginBottom: 15}]}
+            />
+          </TouchableOpacity>
+        </View>
+        <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+          <Image
+            source={require('../../assets/image/profile.png')}
+            style={[
+              styles.image,
+              {width: 46, height: 42, marginRight: 45, marginBottom: 15},
+            ]}
+          />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -46,8 +147,16 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
   },
+  horizontalWrapper1: {
+    flexDirection: 'row',
+    marginTop: 20,
+  },
   contentWrapper3: {
     flex: 0.1,
+  },
+  horizontalWrapper2: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   profileContainer: {
     marginTop: -80,
