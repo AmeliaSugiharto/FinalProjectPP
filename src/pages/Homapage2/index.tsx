@@ -38,18 +38,33 @@ const Homepage = ({navigation}) => {
               source={require('../../assets/image/ragdoll.png')}
               style={styles.image1}
             />
+            <TouchableOpacity
+              style={[styles.boxWrapper, {marginTop: 10}]}
+              onPress={() => navigation.navigate('Cat1')}>
+              <Text style={styles.kucing1}>RAGDOLL</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.box}>
             <Image
               source={require('../../assets/image/british.png')}
               style={styles.image2}
             />
+            <TouchableOpacity
+              style={[styles.boxWrapper, {marginLeft: -20},{marginTop: 10}]}
+              onPress={() => navigation.navigate('Cat2')}>
+              <Text style={styles.kucing2}>BRITISH</Text>
+            </TouchableOpacity>
           </View>
           <View style={styles.box}>
             <Image
               source={require('../../assets/image/american.png')}
               style={styles.image3}
             />
+            <TouchableOpacity
+              style={[styles.boxWrapper, {marginLeft: 15}, {marginTop: 10}]}
+              onPress={() => navigation.navigate('Cat3')}>
+              <Text style={styles.kucing3}>AMERICAN</Text>
+            </TouchableOpacity>
           </View>
         </View>
 
@@ -168,6 +183,24 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
+  },
+  kucing1: {
+    color: '#000',
+    fontSize: 20,
+    fontFamily: 'Poppins-Bold',
+    padding: 15,
+  },
+  kucing2: {
+    color: '#000',
+    fontSize: 20,
+    fontFamily: 'Poppins-Bold',
+    padding: 15,
+  },
+  kucing3: {
+    color: '#000',
+    fontSize: 20,
+    fontFamily: 'Poppins-Bold',
+    padding: 15,
   },
   contentWrapper3: {
     flex: 0.6,
