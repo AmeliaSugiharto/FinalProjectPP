@@ -22,3 +22,46 @@ const GetStartedScreen = ({ navigation }) => {
 };
 
 export default GetStartedScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#FFFF',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+  },
+  logo: {
+    position: 'absolute',
+    top: '5%',
+    left: '20%',
+    marginTop: 0,
+    marginLeft: -47,
+  },
+  textContainer: {
+    marginTop: 402,
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 32,
+    fontFamily: 'Poppins-SemiBold',
+    color: '#000',
+  },
+  text1: {
+    marginTop: 10,
+  },
+  buttonContainer: {
+    marginTop: 20,
+    backgroundColor: '#000',
+    paddingVertical: 10,
+    paddingHorizontal: 30,
+    borderRadius: 25,
+    height: 65,
+  },
+  buttonText: {
+    marginTop: 10,
+    fontSize: 18,
+    color: '#FFF',
+    fontFamily: 'Poppins-Regular',
+  },
+});
