@@ -23,10 +23,12 @@ const Article = ({ navigation }) => {
           </View>
         </View>
         <View>
+          <TouchableOpacity onPress={() => openWebsite('https://www.purina.co.id/kucing/mendapatkan-kucing-baru/menemukan-kucing-yang-tepat/mengadopsi-anjing-atau-kucing')}>
             <Image
               source={require('../../assets/image/dog1.jpg')}
               style={styles.photo2}
             />
+          </TouchableOpacity>
           <View style={styles.textPlaceholder3}>
             <Text style={styles.placeholderText3}>Active & Spacious? Dog. Busy & Compact? Cat. Cuddles? Choose your style!</Text>
           </View>
@@ -38,12 +40,33 @@ const Article = ({ navigation }) => {
             <Text style={styles.placeholderText2}>Getting a Cat or Dog is Good for Brain Health</Text>
           </View>
         </View>
+        <TouchableOpacity onPress={() => openWebsite('https://www.kompas.id/baca/ilmiah-populer/2022/02/24/memelihara-kucing-atau-anjing-baik-bagi-kesehatan-otak')}>
           <Image
             source={require('../../assets/image/cat2.jpg')}
             style={styles.photo3}
           />
+        </TouchableOpacity>
       </View>
-      
+      <View style={styles.bottomContainer}>
+        <TouchableOpacity onPress={() => navigation.navigate('Homepage')}>
+          <Image
+            source={require('../../assets/image/home.png')}
+            style={styles.bottomIcon}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Article')}>
+          <Image
+            source={require('../../assets/image/article.png')}
+            style={styles.bottomIcon}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+          <Image
+            source={require('../../assets/image/profile.png')}
+            style={styles.bottomIcon}
+          />
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };
@@ -170,6 +193,18 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-SemiBold',
     marginLeft: 2,
   },
+  bottomContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    backgroundColor: '#FFD0D0',
+    height: 55,
+    width: 420,
+    right: 20,
+    alignItems: 'center',
+  },
+  bottomIcon: {
+    width: 40,
+    height: 35,
   },
 });
 
