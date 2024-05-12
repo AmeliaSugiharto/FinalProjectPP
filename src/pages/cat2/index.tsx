@@ -10,6 +10,12 @@ const Cat2 = ({navigation}) => {
         <TouchableOpacity onPress={() => navigation.navigate('Homepage2')}>
           <BackButton/>
         </TouchableOpacity>
+        <View>
+          <Image
+            source={require('../../assets/image/British1.png')}
+            style={styles.dogImage}
+          />
+        </View>
         <Text style={styles.dogName}>PICIS</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
@@ -64,7 +70,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 16,
   },
   iconContainer: {
     flexDirection: 'row',
