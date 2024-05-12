@@ -32,7 +32,13 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
   },
-  
+  header: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 20,
+    color: '#DD7A7A',
+  },
 });
 
 export default Ulasan;
