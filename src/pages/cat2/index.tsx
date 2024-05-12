@@ -1,33 +1,140 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
+import {Gap} from '../../components/atoms';
+import {BackButton} from '../../components/molecules';
 
-const Homepage = () => {
+const Cat2 = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <View style={styles.contentWrapper} />
-      <View style={styles.contentWrapper2} />
-      <View style={styles.contentWrapper3} />
+      <View style={styles.containerImage}>
+        <TouchableOpacity onPress={() => navigation.navigate('Homepage2')}>
+          <BackButton/>
+        </TouchableOpacity>
+        <Text style={styles.dogName}>PICIS</Text>
+        <View style={styles.iconContainer}>
+          <View style={styles.iconContainer1}>
+            <Text style={styles.iconText}>Sex</Text>
+          </View>
+          <View style={styles.iconContainer2}>
+            <Text style={styles.textYears}>1 years </Text>
+            <Text>Age</Text>
+          </View>
+          <View style={styles.iconContainer3}>
+            <Text style={styles.textKg}>9 Kg </Text>
+            <Text >Weight</Text>
+          </View>
+        </View>
+        <View>
+          <TouchableOpacity onPress={() => navigation.navigate('DataAdopter')}>
+            <Text style={styles.adoptButtonText}>adopt now</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 };
 
-export default Homepage;
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFD0D0',
+    backgroundColor: '#F9DADA', 
   },
-  contentWrapper: {
+  containerImage:{
+    flexDirection: 'column',
     flex: 1,
+    backgroundColor: 'white',
+    height: 830,
+    borderRadius: 50,
+    top: 300,
   },
-  contentWrapper2: {
-    flex: 4,
-    backgroundColor: '#FFFFFF',
-    borderTopLeftRadius: 40,
-    borderTopRightRadius: 40,
+  dogName: {
+    fontSize: 35,
+    fontFamily: 'Poppins-Bold',
+    color: 'black',
+    textAlign: 'center',
+    bottom: 280,
   },
-  contentWrapper3: {
-    flex: 0.5,
+  infoContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  iconContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    marginTop: -250,
+  },
+  iconContainer1: {
+    backgroundColor: '#FFD0D0',
+    height: 62,
+    width: 68,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: -25,
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+  },
+  iconContainer2: {
+    backgroundColor: '#FFD0D0',
+    height: 62,
+    width: 68,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+    marginTop: -25,
+  },
+  iconContainer3: {
+    backgroundColor: '#FFD0D0',
+    height: 62,
+    width: 68,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: -25,
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+  },
+  corgisText:{
+    fontFamily: 'Poppins-Regular',
+    fontSize: 15,
+    textAlign: 'center',
+    color: 'black',
+  },
+  textYears:{
+    color: 'black',
+  },
+  textKg:{
+    color: 'black',
+  },
+  adoptButton: {
+    backgroundColor: '#FFD0D0',
+    borderRadius: 20,
+    paddingVertical: 12,
+    alignItems: 'center',
+    width: 370,
+    marginLeft: 20,
+  },
+  adoptButtonText: {
+    color: 'black',
+    fontWeight: 'bold',
   },
 });
+
+export default Cat2;
