@@ -22,33 +22,34 @@ const SignUp = ({navigation}) => {
       <Text style={styles.instructionsText}>create your account</Text>
 
       <TextInput
+        style={[styles.input, styles.usernameInputText]}
         placeholder="username"
-        textAlign="center"
         onChangeText={setUsername}
         value={username}
       />
       <TextInput
+        style={[styles.input, styles.passwordInput]}
         placeholder="email"
-        textAlign="center"
         secureTextEntry={true}
         onChangeText={setPassword}
         value={password}
       />
       <TextInput
+        style={[styles.input, styles.passwordInput]}
         placeholder="Password"
-        textAlign="center"
         secureTextEntry={true}
         onChangeText={setPassword}
         value={password}
       />
       <TextInput
+        style={[styles.input, styles.passwordInput]}
         placeholder="confirm password"
-        textAlign="center"
         secureTextEntry={true}
         onChangeText={setPassword}
         value={password}
       />
       <TouchableOpacity
+        style={styles.loginButton}
         onPress={() => navigation.navigate('Homepage')}>
         <Text style={styles.buttonText}>CONFIRM</Text>
       </TouchableOpacity>
@@ -70,9 +71,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
   },
+  input: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    height: 48,
+    width: 350,
+    marginBottom: 20,
+    paddingLeft: 40,
+  },
   signupText: {
-    marginTop: 90,
-    marginBottom: -10,
     fontSize: 35,
     fontFamily: 'Poppins-SemiBold',
     color: '#000',
@@ -83,34 +90,39 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginBottom: 10,
   },
-  loginButton2: {
-    backgroundColor: '#704145',
+  usernameInputText: {
+    marginTop: 55,
+    fontSize: 15,
+  },
+  passwordInput: {
+    marginBottom: 20,
+    fontSize: 15,
+  },
+  loginButton: {
     borderRadius: 40,
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
     width: 350,
     height: 48,
     marginBottom: 86,
-    marginTop: 23,
+    marginTop: 15,
     justifyContent: 'center',
     alignItems: 'center',
   },
   buttonText: {
-    color: '#000',
     fontSize: 20,
     fontFamily: 'Poppins-Regular',
   },
   buttonText2: {
-    color: '#eee',
     fontSize: 20,
     fontFamily: 'Poppins-Regular',
   },
   noAccountText: {
     fontSize: 16,
     marginTop: -20,
-    marginBottom: -20,
     fontFamily: 'Poppins-Regular',
   },
 });
 
 export default SignUp;
+
