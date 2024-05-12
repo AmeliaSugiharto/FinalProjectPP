@@ -40,6 +40,44 @@ const SignIn = ({navigation}) => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  input: {
+    backgroundColor: '#eaa',
+    borderRadius: 40,
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    height: 48,
+    width: 350,
+    marginBottom: 20,
+    paddingLeft: 40,
+  },
+  welcomeText: {
+    marginTop: 60,
+    marginBottom: -10,
+    fontSize: 35,
+    fontFamily: 'Poppins-SemiBold',
+    color: '#000',
+  },
+  instructionsText: {
+    height: 20,
+    color: '#969292',
+    fontSize: 15,
+    marginBottom: 60,
+  },
+  usernameInputText: {
+    marginTop: 55,
+    fontSize: 15,
+  },
+  passwordInput: {
+    marginBottom: 20,
+    fontSize: 15,
+  },
+});
 
 export default SignIn;
