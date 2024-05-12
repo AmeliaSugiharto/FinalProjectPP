@@ -135,7 +135,8 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
-    
+    textAlign: 'justify', 
+    paddingHorizontal: 10,
   },
   textYears:{
     color: 'black',
