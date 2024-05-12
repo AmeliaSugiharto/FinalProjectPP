@@ -101,6 +101,13 @@ const styles = StyleSheet.create({
     width: 60,
     height: 30,
   },
+  buttonText: {
+    fontSize: 13,
+    fontFamily: 'poppins-Bold',
+    color: '#333',
+    marginTop: 4,
+    left: 10,
+  },
 });
 
 export default Ulasan;
