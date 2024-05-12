@@ -14,7 +14,10 @@ const Ulasan = ({navigation}) => {
           style={styles.input}
           placeholder="Share your experience with us"
           placeholderTextColor="#CCC9C9"
-        />
+        /><View style={styles.buttonContainer}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Homepage')}>
+          <Text style={styles.buttonText}>Cancel</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
