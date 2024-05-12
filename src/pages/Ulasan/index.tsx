@@ -71,6 +71,24 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Poppins-Regular'
   },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 20,
+  },
+  button: {
+    backgroundColor: '#DD7A7A',
+    borderRadius: 20,
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+    marginLeft: 150,
+    width: 60,
+    height: 30,
+  },
 });
 
 export default Ulasan;
