@@ -1,45 +1,65 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity, Linking, ScrollView } from 'react-native';
 
-const Article = () => {
+const Article = ({ navigation }) => {
+
+  const openWebsite = (url) => {
+    Linking.openURL(url);
+  };
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>ARTIKEL</Text>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.header}>ARTICLE</Text>
       <View style={styles.contentContainer}>
         <Image
-          source={require('./path/to/cat1.jpg')}
-          style={styles.photo}
+          source={require('../../assets/image/cat1.jpg')}
+          style={styles.photo1}
         />
-        <View style={styles.textPlaceholder} />
       </View>
-      <View style={styles.contentContainer}>
-        <Image
-          source={require('./path/to/dog.jpg')}
-          style={styles.photo}
-        />
-        <View style={styles.textPlaceholder} />
+      <View style={styles.contentContainer2}>
+        <View style={styles.containerBox2}>
+          <View style={styles.textPlaceholder1}>
+            <Text style={styles.placeholderText1}>Choosing the Right Pet: Cat or Dog</Text>
+          </View>
+        </View>
+        <View>
+            <Image
+              source={require('../../assets/image/dog1.jpg')}
+              style={styles.photo2}
+            />
+          <View style={styles.textPlaceholder3}>
+            <Text style={styles.placeholderText3}>Active & Spacious? Dog. Busy & Compact? Cat. Cuddles? Choose your style!</Text>
+          </View>
+        </View>
       </View>
-      <View style={styles.contentContainer}>
-        <Image
-          source={require('./path/to/cat2.jpg')}
-          style={styles.photo}
-        />
-        <View style={styles.textPlaceholder} />
+      <View style={styles.contentContainer3}>
+        <View style={styles.containerBox3}>
+          <View style={styles.textPlaceholder2}>
+            <Text style={styles.placeholderText2}>Getting a Cat or Dog is Good for Brain Health</Text>
+          </View>
+        </View>
+          <Image
+            source={require('../../assets/image/cat2.jpg')}
+            style={styles.photo3}
+          />
       </View>
-    </View>
+      
+    </ScrollView>
   );
 };
 
+
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     padding: 16,
   },
   header: {
-    fontSize: 24,
+    fontSize: 40,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 16,
+    color: 'black',
   },
   contentContainer: {
     flexDirection: 'row',
@@ -66,17 +86,90 @@ const styles = StyleSheet.create({
     marginTop: 42,
     width: 370,
   },
-  photo: {
-    width: 100,
-    height: 100,
+  photo1: {
+    width: '100%',
+    height: 200,
     borderRadius: 10,
-    marginRight: 16,
+    marginBottom: 43,
   },
-  textPlaceholder: {
+  photo2: {
+    width: 130,
+    height: 130,
+    borderRadius: 5,
+    marginBottom: 16,
+    marginTop: -150,
+  },
+  photo3: {
+    width: 130,
+    height: 130,
+    borderRadius: 5,
+    marginTop: -150,
+  },
+  textPlaceholder1: {
     flex: 1,
-    backgroundColor: 'pink',
-    height: 100,
+    backgroundColor: '#FFD0D0',
+    height: 170,
     borderRadius: 10,
+    paddingBottom: 50,
+    marginLeft: 40,
+    justifyContent: 'center',
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.5)',
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  textPlaceholder2: {
+    flex: 1,
+    backgroundColor: '#FFD0D0',
+    height: 170,
+    borderRadius: 10,
+    paddingBottom: 50,
+    marginRight: 40,
+    justifyContent: 'center',
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.5)',
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  textPlaceholder3: {
+    backgroundColor: '#FFD0D0',
+    height: 132,
+    width: 343,
+    borderRadius: 10,
+    marginTop: -370,
+    alignSelf: 'center',
+    justifyContent: 'center', 
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.5)',
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+  placeholderText1: {
+    textAlign: 'center',
+    fontSize: 15,
+    color: 'black',
+    fontFamily: 'Poppins-SemiBold',
+    marginLeft: 92,
+    marginTop: 46,
+  },
+  placeholderText2: {
+    textAlign: 'center',
+    fontSize: 15,
+    color: 'black',
+    fontFamily: 'Poppins-SemiBold',
+    marginRight: 90,
+    marginTop: 46,
+  },
+  placeholderText3: {
+    textAlign: 'center',
+    fontSize: 15,
+    color: 'black',
+    fontFamily: 'Poppins-SemiBold',
+    marginLeft: 2,
+  },
   },
 });
 
