@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   input: {
+    backgroundColor: '#eaa',
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
     height: 48,
@@ -99,8 +100,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   loginButton: {
-    backgroundColor: '#A6575E',
-    borderRadius: 40,
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
     width: 350,
@@ -111,8 +110,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   loginButton2: {
-    backgroundColor: '#704145',
-    borderRadius: 40,
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
     width: 350,
@@ -128,7 +125,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
   },
   buttonText2: {
-    color: '#eee',
+    color: '#000',
     fontSize: 20,
     fontFamily: 'Poppins-Regular',
   },
@@ -141,4 +138,3 @@ const styles = StyleSheet.create({
 });
 
 export default SignUp;
-
