@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 const GetStartedScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Image source={require('../../assets/image/Started.png')} style={styles.logo} />
+      <Image source={require('../../assets/image/started.png')} style={styles.logo} />
 
       <View style={styles.textContainer}>
         <Text style={styles.text}>Ready to make a</Text>
