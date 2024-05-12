@@ -11,7 +11,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {PageHeader} from '../../components';
 
-const Homepage = ({navigation}) => {
+const Homepage2 = ({navigation}) => {
   const Tab = createBottomTabNavigator();
   return (
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
@@ -103,7 +103,7 @@ const Homepage = ({navigation}) => {
   );
 };
 
-export default Homepage;
+export default Homepage2;
 
 const styles = StyleSheet.create({
   container: {
