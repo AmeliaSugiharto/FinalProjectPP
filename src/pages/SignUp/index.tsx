@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   loginButton: {
+    backgroundColor: '#A6575E',
     borderRadius: 40,
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
@@ -109,17 +110,32 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  loginButton2: {
+    backgroundColor: '#704145',
+    borderRadius: 40,
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    width: 350,
+    height: 48,
+    marginBottom: 86,
+    marginTop: 23,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   buttonText: {
+    color: '#000',
     fontSize: 20,
     fontFamily: 'Poppins-Regular',
   },
   buttonText2: {
+    color: '#eee',
     fontSize: 20,
     fontFamily: 'Poppins-Regular',
   },
   noAccountText: {
     fontSize: 16,
     marginTop: -20,
+    marginBottom: -20,
     fontFamily: 'Poppins-Regular',
   },
 });
