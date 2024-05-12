@@ -19,13 +19,16 @@ const Cat3 = ({navigation}) => {
         <Text style={styles.dogName}>BOBBY</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
+            <Image source={require('../../assets/image/female.png')}/>
             <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
             <Text style={styles.textYears}>1 years </Text>
+            <Text>Age</Text>
           </View>
           <View style={styles.iconContainer3}>
             <Text style={styles.textKg}>9 Kg </Text>
+            <Text >Weight</Text>
           </View>
         </View>
         <Gap height={32}/>
