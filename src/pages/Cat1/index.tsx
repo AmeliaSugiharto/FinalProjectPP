@@ -12,16 +12,22 @@ const Cat1 = ({navigation}) => {
         </TouchableOpacity>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
+            <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
+            <Text style={styles.textYears}>1 years </Text>
+            <Text>Age</Text>
           </View>
           <View style={styles.iconContainer3}>
+            <Text style={styles.textKg}>2 Kg </Text>
+            <Text >Weight</Text>
           </View>
         </View>
         <Gap height={32}/>
         <Gap height={24}/>
         <View>
           <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
+            <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
       </View>
