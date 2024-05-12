@@ -59,6 +59,11 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     top: 300,
   },
+  dogImage: {
+    width: 330,
+    height: 415,
+    bottom: 300,
+  },
   dogName: {
     fontSize: 35,
     fontFamily: 'Poppins-Bold',
@@ -70,6 +75,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginBottom: 16,
   },
   iconContainer: {
     flexDirection: 'row',
