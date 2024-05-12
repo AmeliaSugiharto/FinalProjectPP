@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SplashScreen, NewPage, GetStarted, Article, DataAdopter} from '../pages';
+import {SplashScreen, NewPage, GetStarted, Article, DataAdopter, Ulasan} from '../pages';
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -29,6 +29,11 @@ const index = () => {
       <Stack.Screen
         name="DataAdopter"
         component={DataAdopter}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Ulasan"
+        component={Ulasan}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
