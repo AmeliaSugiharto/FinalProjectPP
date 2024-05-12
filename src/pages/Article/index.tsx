@@ -46,6 +46,26 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 16,
   },
+  contentContainer2: {
+    flex: 1,
+    marginBottom: 16,
+  },
+  contentContainer3: {
+    alignItems: 'flex-end',
+    marginBottom: 16,
+  },
+  containerBox2: {
+    flex: 1,
+    flexDirection: 'row',
+    marginTop: 25,
+    width: 370,
+  },
+  containerBox3: {
+    flex: 1,
+    flexDirection: 'row',
+    marginTop: 42,
+    width: 370,
+  },
   photo: {
     width: 100,
     height: 100,
