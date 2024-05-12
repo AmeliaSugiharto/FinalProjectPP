@@ -18,9 +18,18 @@ const Dog2 = ({ navigation }) => {
         </View>
         <Text style={styles.dogName}>BABEL</Text>
         <View style={styles.iconContainer}>
-          <View style={styles.iconContainer1}></View>
-          <View style={styles.iconContainer2}></View>
-          <View style={styles.iconContainer3}></View>
+          <View style={styles.iconContainer1}>
+            <Image source={require('../../assets/image/male.png')} />
+            <Text style={styles.iconText}>Sex</Text>
+          </View>
+          <View style={styles.iconContainer2}>
+            <Text style={styles.textYears}>1 years </Text>
+            <Text>Age</Text>
+          </View>
+          <View style={styles.iconContainer3}>
+            <Text style={styles.textKg}>9 Kg </Text>
+            <Text>Weight</Text>
+          </View>
         </View>
         <Gap height={34} />
         <Gap height={34} />
@@ -111,6 +120,20 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
+  },
+  huskyText: {
+    fontFamily: 'Poppins-Regular',
+    fontSize: 15,
+    textAlign: 'center',
+    color: 'black',
+    textAlign: 'justify',
+    paddingHorizontal: 10,
+  },
+  textYears: {
+    color: 'black',
+  },
+  textKg: {
+    color: 'black',
   },
   adoptButton: {
     backgroundColor: '#FFD0D0',
