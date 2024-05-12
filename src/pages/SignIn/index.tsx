@@ -25,17 +25,30 @@ const SignIn = ({navigation}) => {
 
       <TextInput
         style={[styles.input, styles.usernameInputText]}
-        placeholder=""
+        placeholder="username or email"
         onChangeText={setUsername}
         value={username}
       />
       <TextInput
         style={[styles.input, styles.passwordInput]}
-        placeholder=""
+        placeholder="Password"
         secureTextEntry={true}
         onChangeText={setPassword}
         value={password}
       />
+
+      <TouchableOpacity
+        style={styles.loginButton}
+        onPress={() => navigation.navigate('Homepage')}>
+        <Text style={styles.buttonText}>LOGIN</Text>
+      </TouchableOpacity>
+
+      <Text style={styles.noAccountText}>don't have an account?</Text>
+      <TouchableOpacity
+        style={styles.loginButton2}
+        onPress={() => navigation.navigate('SignUp')}>
+        <Text style={styles.buttonText2}>create new account</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -77,6 +90,46 @@ const styles = StyleSheet.create({
   passwordInput: {
     marginBottom: 20,
     fontSize: 15,
+  },
+  loginButton: {
+    backgroundColor: '#A6575E',
+    borderRadius: 40,
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    width: 350,
+    height: 48,
+    marginBottom: 86,
+    marginTop: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loginButton2: {
+    backgroundColor: '#704145',
+    borderRadius: 40,
+    fontFamily: 'Poppins-Regular',
+    fontSize: 14,
+    width: 350,
+    height: 48,
+    marginBottom: 86,
+    marginTop: 23,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#000',
+    fontSize: 20,
+    fontFamily: 'Poppins-Regular',
+  },
+  buttonText2: {
+    color: '#eee',
+    fontSize: 20,
+    fontFamily: 'Poppins-Regular',
+  },
+  noAccountText: {
+    fontSize: 16,
+    marginTop: 30,
+    marginBottom: -20,
+    fontFamily: 'Poppins-Regular',
   },
 });
 
