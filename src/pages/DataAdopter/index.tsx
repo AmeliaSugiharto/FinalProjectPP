@@ -18,6 +18,12 @@ const DataAdopter = ({navigation}) => {
           <TextInput label="" placeholder="No Telp"/>
           <TextInput label="" placeholder="Email"/>
           <TextInput label="" placeholder="Umur"/>
+          <TextInput label="" placeholder="Pekerjaan"/>
+          <TextInput label="" placeholder="Hewan Apa yang diadopt"/>
+          <TextInput label="" placeholder="Jenis Hewan"/>
+          <TextInput label="" placeholder="Nama Hewan"/>
+          <TextInput label="" placeholder="Jenis Kelamin Hewan"/>
+          <TextInput label="" placeholder="Alasan Mengadopsi"/>
         </View>
         <Image
           source={require('../../assets/image/kakicat2.png')}
