@@ -8,13 +8,12 @@ import {
 const Stack = createNativeStackNavigator();
 const index = () => {
   return (
-    <Stack.Navigator>
       <Stack.Screen
         name="SignUp"
         component={SignUp}
         options={{headerShown: false}}
       />
-        <Stack.Screen
+      <Stack.Screen
         name="Cat2"
         component={Cat2}
         options={{headerShown: false}}
