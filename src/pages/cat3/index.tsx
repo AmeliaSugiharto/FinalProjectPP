@@ -32,6 +32,9 @@ const Cat3 = ({navigation}) => {
           </View>
         </View>
         <Gap height={32}/>
+        <Text style={styles.corgisText}>
+        American Shorthair cats are known for their friendly and adaptable personalities. They're typically easygoing, sociable, and good-natured, making them great companions for families and other pets. They also tend to be relatively low-maintenance, enjoying both playtime and relaxation in equal measure.
+        </Text>
         <Gap height={24}/>
         <View>
           <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
@@ -132,6 +135,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
+    
   },
   textYears:{
     color: 'black',
