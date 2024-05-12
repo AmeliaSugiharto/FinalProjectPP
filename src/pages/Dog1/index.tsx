@@ -1,10 +1,14 @@
 import React from 'react';
-import {View,  StyleSheet, } from 'react-native';
+import {View, StyleSheet, TouchableOpacity} from 'react-native';
+import {BackButton} from '../../components/molecules';
 
 const Dog1 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
+        <TouchableOpacity onPress={() => navigation.navigate('Homepage')}>
+          <BackButton/>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -23,6 +27,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     top: 300,
   },
+  
 });
 
 export default Dog1;
