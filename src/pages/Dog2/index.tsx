@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, TouchableOpacity} from 'react-native';
 import {BackButton} from '../../components/molecules';
 
-const Dog1 = ({navigation}) => {
+const Dog2 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
@@ -30,4 +30,4 @@ const styles = StyleSheet.create({
   
 });
 
-export default Dog1;
+export default Dog2;
