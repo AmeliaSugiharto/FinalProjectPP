@@ -6,6 +6,10 @@ const Ulasan = ({navigation}) => {
     <View style={styles.container}>
       <View style={styles.pinkContainer}>
         <Text style={styles.header}>THANKS FOR YOUR CONTRIBUTIONS</Text>
+        <Image
+          source={require('../../assets/image/rating.png')}
+          style={styles.rating}
+        />
       </View>
     </View>
   );
@@ -38,6 +42,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 20,
     color: '#DD7A7A',
+  },
+  rating: {
+    marginTop: 34,
+    marginLeft: 25,
   },
 });
 
