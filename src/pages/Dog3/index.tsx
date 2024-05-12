@@ -32,10 +32,13 @@ const Dog3 = ({navigation}) => {
           </View>
         </View>
         <Gap height={28}/>
+        <Text style={styles.goldenText}>
+        Golden Retrievers are beloved for their gentle and friendly nature. They're known for being loyal, affectionate, and eager to please, which makes them excellent family pets and therapy dogs. They also tend to be good with children and other pets, making them popular choices for households with multiple animals.
+        </Text>
         <Gap height={20}/>
         <View>
           <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
-            <Text style={styles.adoptButtonText}></Text>
+            <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -70,6 +73,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     bottom: 280,
     marginTop: -30,
+  },
+  infoContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
   },
   iconContainer: {
     flexDirection: 'row',
@@ -121,6 +130,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
+  },
+  goldenText:{
+    fontFamily: 'Poppins-Regular',
+    fontSize: 15,
+    textAlign: 'center',
+    color: 'black',
+    textAlign: 'justify', 
+    paddingHorizontal: 10,
   },
   textYears:{
     color: 'black',
