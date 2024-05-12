@@ -10,8 +10,12 @@ const Cat1 = ({navigation}) => {
         <TouchableOpacity onPress={() => navigation.navigate('Homepage2')}>
           <BackButton/>
         </TouchableOpacity>
+        <View>
+        </View>
+        <Text style={styles.dogName}>Bobby</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
+            <Image source={require('../../assets/image/male.png')}/>
             <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
@@ -24,6 +28,9 @@ const Cat1 = ({navigation}) => {
           </View>
         </View>
         <Gap height={32}/>
+        <Text style={styles.corgisText}>
+        American Shorthair cats are known for their friendly and adaptable personalities. They're typically easygoing, sociable, and good-natured, making them great companions for families and other pets. They also tend to be relatively low-maintenance, enjoying both playtime and relaxation in equal measure.
+        </Text>
         <Gap height={24}/>
         <View>
           <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
@@ -72,7 +79,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
-    marginTop: 150,
+    marginTop: -250,
   },
   iconContainer1: {
     backgroundColor: '#FFD0D0',
