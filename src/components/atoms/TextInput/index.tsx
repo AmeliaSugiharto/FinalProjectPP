@@ -16,6 +16,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#000',
   },
+  input: {
+    fontFamily: 'Poppins-SemiRegular',
+    fontSize: 12.5,
+    borderRadius: 5.5,
+    padding: 12.5,
+    borderColor: 'black',
+    height: 37,
+    width: 365,
+    borderRadius: 10,
+    borderWidth: 1,
+    
+  },
 });
 
 export default TextInput;
