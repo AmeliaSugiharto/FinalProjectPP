@@ -13,6 +13,7 @@ const Cat2 = ({navigation}) => {
         <Text style={styles.dogName}>PICIS</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
+            <Image source={require('../../assets/image/male.png')}/>
             <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
@@ -24,8 +25,13 @@ const Cat2 = ({navigation}) => {
             <Text >Weight</Text>
           </View>
         </View>
+        <Gap height={32}/>
+        <Text style={styles.corgisText}>
+        British Shorthair cats are known for their calm and easygoing demeanor. They're typically independent yet affectionate, enjoying lounging around the house and being near their owners without being overly demanding. They are also known for their round faces and dense, plush coats, which give them a distinctive appearance.
+        </Text>
+        <Gap height={24}/>
         <View>
-          <TouchableOpacity onPress={() => navigation.navigate('DataAdopter')}>
+          <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
             <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
