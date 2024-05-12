@@ -22,7 +22,8 @@ const Ulasan = ({navigation}) => {
           <Text style={styles.buttonText1}>Post</Text>
         </TouchableOpacity>
       </View>
-      </view>
+        
+      </View>
     </View>
   );
 };
@@ -107,6 +108,13 @@ const styles = StyleSheet.create({
     color: '#333',
     marginTop: 4,
     left: 10,
+  },
+  buttonText1: {
+    fontSize: 13,
+    fontFamily: 'poppins-Bold',
+    color: '#333',
+    marginTop: 4,
+    left: 16,
   },
 });
 
