@@ -10,6 +10,11 @@ const Ulasan = ({navigation}) => {
           source={require('../../assets/image/rating.png')}
           style={styles.rating}
         />
+        <TextInput
+          style={styles.input}
+          placeholder="Share your experience with us"
+          placeholderTextColor="#CCC9C9"
+        />
       </View>
     </View>
   );
