@@ -63,6 +63,8 @@ const styles = StyleSheet.create({
     width: 330,
     height: 415,
     bottom: 300,
+    marginLeft: 25,
+    marginRight: 14,
   },
   dogName: {
     fontSize: 35,
@@ -133,6 +135,8 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
+    textAlign: 'justify', 
+    paddingHorizontal: 10,
   },
   textYears:{
     color: 'black',
