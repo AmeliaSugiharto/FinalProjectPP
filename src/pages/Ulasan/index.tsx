@@ -52,6 +52,18 @@ const styles = StyleSheet.create({
     marginTop: 34,
     marginLeft: 25,
   },
+  input: {
+    borderWidth: 1,
+    borderColor: '#DD7A7A',
+    backgroundColor: '#ffff',
+    borderRadius: 8,
+    marginTop: 30,
+    marginLeft: 4,
+    width: 273,
+    height: 85,
+    fontSize: 12,
+    fontFamily: 'Poppins-Regular'
+  },
 });
 
 export default Ulasan;
