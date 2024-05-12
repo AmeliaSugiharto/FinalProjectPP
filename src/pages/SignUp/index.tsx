@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: '#eaa',
+    borderRadius: 40,
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
     height: 48,
