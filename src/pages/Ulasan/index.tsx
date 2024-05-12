@@ -18,7 +18,11 @@ const Ulasan = ({navigation}) => {
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Homepage')}>
           <Text style={styles.buttonText}>Cancel</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Homepage')}>
+          <Text style={styles.buttonText1}>Post</Text>
+        </TouchableOpacity>
       </View>
+      </view>
     </View>
   );
 };
