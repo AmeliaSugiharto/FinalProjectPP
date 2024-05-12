@@ -1,14 +1,13 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import { Gap } from '../../components/atoms';
-import { BackButton } from '../../components/molecules';
-
-const Dog2 = ({ navigation }) => {
+import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
+import {Gap} from '../../components/atoms';
+import {BackButton} from '../../components/molecules';
+const Dog2 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
         <TouchableOpacity onPress={() => navigation.navigate('Homepage')}>
-          <BackButton />
+          <BackButton/>
         </TouchableOpacity>
         <View>
           <Image
@@ -19,7 +18,7 @@ const Dog2 = ({ navigation }) => {
         <Text style={styles.dogName}>BABEL</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
-            <Image source={require('../../assets/image/male.png')} />
+            <Image source={require('../../assets/image/male.png')}/>
             <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
@@ -28,14 +27,17 @@ const Dog2 = ({ navigation }) => {
           </View>
           <View style={styles.iconContainer3}>
             <Text style={styles.textKg}>9 Kg </Text>
-            <Text>Weight</Text>
+            <Text > Weight </Text>
           </View>
         </View>
-        <Gap height={34} />
-        <Gap height={34} />
+        <Gap height={34}/>
+        <Text style={styles.huskyText}>
+        Huskies are known for their energetic and friendly personalities. They're intelligent and independent but can also be quite stubborn. Additionally, they have a strong prey drive and love to howl, which is part of their natural communication behavior.
+        </Text>
+        <Gap height={34}/>
         <View>
           <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
-            <Text style={styles.adoptButtonText}></Text>
+            <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -46,9 +48,9 @@ const Dog2 = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F9DADA',
+    backgroundColor: '#F9DADA', 
   },
-  containerImage: {
+  containerImage:{
     flexDirection: 'column',
     flex: 1,
     backgroundColor: 'white',
@@ -69,6 +71,12 @@ const styles = StyleSheet.create({
     color: 'black',
     textAlign: 'center',
     bottom: 280,
+  },
+  infoContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
   },
   iconContainer: {
     flexDirection: 'row',
@@ -121,18 +129,18 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
   },
-  huskyText: {
+  huskyText:{
     fontFamily: 'Poppins-Regular',
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
-    textAlign: 'justify',
+    textAlign: 'justify', 
     paddingHorizontal: 10,
   },
-  textYears: {
+  textYears:{
     color: 'black',
   },
-  textKg: {
+  textKg:{
     color: 'black',
   },
   adoptButton: {
@@ -142,7 +150,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: 370,
     marginLeft: 20,
-    alignSelf: 'center',
+    alignSelf: 'center', 
   },
   adoptButtonText: {
     color: 'black',
