@@ -82,6 +82,8 @@ const styles = StyleSheet.create({
     paddingLeft: 40,
   },
   signupText: {
+    marginTop: 90,
+    marginBottom: -10,
     fontSize: 35,
     fontFamily: 'Poppins-SemiBold',
     color: '#000',
