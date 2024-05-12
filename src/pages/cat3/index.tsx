@@ -10,19 +10,24 @@ const Cat3 = ({navigation}) => {
         <TouchableOpacity onPress={() => navigation.navigate('Homepage2')}>
           <BackButton/>
         </TouchableOpacity>
+
+        <Text style={styles.dogName}>BOBBY</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
+            <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
+            <Text style={styles.textYears}>1 years </Text>
           </View>
           <View style={styles.iconContainer3}>
+            <Text style={styles.textKg}>9 Kg </Text>
           </View>
         </View>
         <Gap height={32}/>
         <Gap height={24}/>
         <View>
           <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
-            <Text style={styles.adoptButtonText}></Text>
+            <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -43,6 +48,20 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     top: 300,
   },
+  dogImage: {
+    width: 330,
+    height: 415,
+    bottom: 300,
+    marginLeft: 25,
+    marginRight: 14,
+  },
+  dogName: {
+    fontSize: 35,
+    fontFamily: 'Poppins-Bold',
+    color: 'black',
+    textAlign: 'center',
+    bottom: 280,
+  },
   infoContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -53,7 +72,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
-    marginTop: 100,
+    marginTop: 150,
   },
   iconContainer1: {
     backgroundColor: '#FFD0D0',
@@ -99,6 +118,18 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.5,
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
+  },
+  corgisText:{
+    fontFamily: 'Poppins-Regular',
+    fontSize: 15,
+    textAlign: 'center',
+    color: 'black',
+  },
+  textYears:{
+    color: 'black',
+  },
+  textKg:{
+    color: 'black',
   },
   adoptButton: {
     backgroundColor: '#FFD0D0',
