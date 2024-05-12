@@ -25,6 +25,14 @@ const styles = StyleSheet.create({
     height: 311,
     margin: 50,
     borderRadius: 20,
+    borderBottomWidth: 5,
+    borderColor: 'rgba(0, 0, 0, 0.3)',
+    shadowColor: '#000',
+    shadowOpacity: 0.5,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+  },
+  
 });
 
 export default Ulasan;
