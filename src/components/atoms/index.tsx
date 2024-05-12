@@ -1,3 +1,4 @@
+import Gap from "./Gap";
 import TextInput from "./TextInput";
 
-export {TextInput};
+export {Gap, TextInput};
