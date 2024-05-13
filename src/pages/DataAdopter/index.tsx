@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import {TextInput} from '../../components/atoms';
 
@@ -13,17 +20,17 @@ const DataAdopter = ({navigation}) => {
         />
         <View style={styles.containerPH}>
           <Text style={styles.dcaText}> Data Calon Adopter </Text>
-          <TextInput label="" placeholder="Nama Lengkap"/>
-          <TextInput label="" placeholder="Alamat"/>
-          <TextInput label="" placeholder="No Telp"/>
-          <TextInput label="" placeholder="Email"/>
-          <TextInput label="" placeholder="Umur"/>
-          <TextInput label="" placeholder="Pekerjaan"/>
-          <TextInput label="" placeholder="Hewan Apa yang diadopt"/>
-          <TextInput label="" placeholder="Jenis Hewan"/>
-          <TextInput label="" placeholder="Nama Hewan"/>
-          <TextInput label="" placeholder="Jenis Kelamin Hewan"/>
-          <TextInput label="" placeholder="Alasan Mengadopsi"/>
+          <TextInput label="" placeholder="Nama Lengkap" />
+          <TextInput label="" placeholder="Alamat" />
+          <TextInput label="" placeholder="No Telp" />
+          <TextInput label="" placeholder="Email" />
+          <TextInput label="" placeholder="Umur" />
+          <TextInput label="" placeholder="Pekerjaan" />
+          <TextInput label="" placeholder="Hewan Apa yang diadopt" />
+          <TextInput label="" placeholder="Jenis Hewan" />
+          <TextInput label="" placeholder="Nama Hewan" />
+          <TextInput label="" placeholder="Jenis Kelamin Hewan" />
+          <TextInput label="" placeholder="Alasan Mengadopsi" />
         </View>
         <Image
           source={require('../../assets/image/kakicat2.png')}
@@ -31,9 +38,7 @@ const DataAdopter = ({navigation}) => {
         />
         <View style={styles.containerA}>
           <TouchableOpacity onPress={() => navigation.navigate('Ulasan')}>
-            <Text style={styles.apply}>
-              APPLY NOW
-            </Text>
+            <Text style={styles.apply}>APPLY NOW</Text>
           </TouchableOpacity>
           <Image
             source={require('../../assets/image/kakipink.png')}
@@ -71,17 +76,17 @@ const styles = StyleSheet.create({
     borderBottomWidth: 5,
     borderColor: 'rgba(0, 0, 0, 0.3)',
     shadowColor: '#000',
-    shadowOpacity: 0.20,
+    shadowOpacity: 0.2,
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
   },
-  adoptText :{
+  adoptText: {
     fontSize: 18,
     fontFamily: 'Poppins-Bold',
     color: '#DD7A7A',
     marginTop: 30,
   },
-  dcaText :{
+  dcaText: {
     fontSize: 15,
     fontFamily: 'Poppins-Bold',
     color: '#E29C9C',
@@ -93,7 +98,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     fontFamily: 'Poppins-Bold',
   },
-  kakicat :{
+  kakicat: {
     width: 95,
     height: 95,
     borderRadius: 5,
@@ -101,19 +106,18 @@ const styles = StyleSheet.create({
     marginTop: -50,
     marginLeft: 300,
   },
-  kakicat1 :{
+  kakicat1: {
     width: 95,
     height: 95,
     borderRadius: 5,
     marginRight: 300,
     top: 37,
   },
-  kakipink :{
+  kakipink: {
     width: 22.86,
     height: 25,
     borderRadius: 5,
     bottom: 10,
     marginRight: 125,
   },
-})
-
+});

@@ -8,7 +8,7 @@ const Cat1 = ({navigation}) => {
     <View style={styles.container}>
       <View style={styles.containerImage}>
         <TouchableOpacity onPress={() => navigation.navigate('Homepage2')}>
-          <BackButton/>
+          <BackButton />
         </TouchableOpacity>
         <View>
           <Image
@@ -19,7 +19,7 @@ const Cat1 = ({navigation}) => {
         <Text style={styles.dogName}>NERO</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
-            <Image source={require('../../assets/image/male.png')}/>
+            <Image source={require('../../assets/image/male.png')} />
             <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
@@ -28,16 +28,22 @@ const Cat1 = ({navigation}) => {
           </View>
           <View style={styles.iconContainer3}>
             <Text style={styles.textKg}>2 Kg </Text>
-            <Text >Weight</Text>
+            <Text>Weight</Text>
           </View>
         </View>
-        <Gap height={32}/>
+        <Gap height={32} />
         <Text style={styles.corgisText}>
-        American Shorthair cats are known for their friendly and adaptable personalities. They're typically easygoing, sociable, and good-natured, making them great companions for families and other pets. They also tend to be relatively low-maintenance, enjoying both playtime and relaxation in equal measure.
+          American Shorthair cats are known for their friendly and adaptable
+          personalities. They're typically easygoing, sociable, and
+          good-natured, making them great companions for families and other
+          pets. They also tend to be relatively low-maintenance, enjoying both
+          playtime and relaxation in equal measure.
         </Text>
-        <Gap height={24}/>
+        <Gap height={24} />
         <View>
-          <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
+          <TouchableOpacity
+            style={styles.adoptButton}
+            onPress={() => navigation.navigate('DataAdopter')}>
             <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
@@ -49,9 +55,9 @@ const Cat1 = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F9DADA', 
+    backgroundColor: '#F9DADA',
   },
-  containerImage:{
+  containerImage: {
     flexDirection: 'column',
     flex: 1,
     backgroundColor: 'white',
@@ -130,18 +136,18 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
   },
-  corgisText:{
+  corgisText: {
     fontFamily: 'Poppins-Regular',
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
-    textAlign: 'justify', 
+    textAlign: 'justify',
     paddingHorizontal: 10,
   },
-  textYears:{
+  textYears: {
     color: 'black',
   },
-  textKg:{
+  textKg: {
     color: 'black',
   },
   adoptButton: {

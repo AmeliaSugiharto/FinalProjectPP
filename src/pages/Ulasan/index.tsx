@@ -1,5 +1,12 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+} from 'react-native';
 
 const Ulasan = ({navigation}) => {
   return (
@@ -14,15 +21,19 @@ const Ulasan = ({navigation}) => {
           style={styles.input}
           placeholder="Share your experience with us"
           placeholderTextColor="#CCC9C9"
-        /><View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Homepage')}>
-          <Text style={styles.buttonText}>Cancel</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Homepage')}>
-          <Text style={styles.buttonText1}>Post</Text>
-        </TouchableOpacity>
-      </View>
-        
+        />
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate('Homepage')}>
+            <Text style={styles.buttonText}>Cancel</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.button1}
+            onPress={() => navigation.navigate('Homepage')}>
+            <Text style={styles.buttonText1}>Post</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -70,7 +81,7 @@ const styles = StyleSheet.create({
     width: 273,
     height: 85,
     fontSize: 12,
-    fontFamily: 'Poppins-Regular'
+    fontFamily: 'Poppins-Regular',
   },
   buttonContainer: {
     flexDirection: 'row',

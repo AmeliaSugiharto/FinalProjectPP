@@ -8,7 +8,7 @@ const Dog3 = ({navigation}) => {
     <View style={styles.container}>
       <View style={styles.containerImage}>
         <TouchableOpacity onPress={() => navigation.navigate('Homepage')}>
-          <BackButton/>
+          <BackButton />
         </TouchableOpacity>
         <View>
           <Image
@@ -19,7 +19,7 @@ const Dog3 = ({navigation}) => {
         <Text style={styles.dogName}>ARCHI</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
-            <Image source={require('../../assets/image/male.png')}/>
+            <Image source={require('../../assets/image/male.png')} />
             <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
@@ -28,16 +28,22 @@ const Dog3 = ({navigation}) => {
           </View>
           <View style={styles.iconContainer3}>
             <Text style={styles.textKg}>20 Kg </Text>
-            <Text >Weight</Text>
+            <Text>Weight</Text>
           </View>
         </View>
-        <Gap height={28}/>
+        <Gap height={28} />
         <Text style={styles.goldenText}>
-        Golden Retrievers are beloved for their gentle and friendly nature. They're known for being loyal, affectionate, and eager to please, which makes them excellent family pets and therapy dogs. They also tend to be good with children and other pets, making them popular choices for households with multiple animals.
+          Golden Retrievers are beloved for their gentle and friendly nature.
+          They're known for being loyal, affectionate, and eager to please,
+          which makes them excellent family pets and therapy dogs. They also
+          tend to be good with children and other pets, making them popular
+          choices for households with multiple animals.
         </Text>
-        <Gap height={20}/>
+        <Gap height={20} />
         <View>
-          <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
+          <TouchableOpacity
+            style={styles.adoptButton}
+            onPress={() => navigation.navigate('DataAdopter')}>
             <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
@@ -49,9 +55,9 @@ const Dog3 = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F9DADA', 
+    backgroundColor: '#F9DADA',
   },
-  containerImage:{
+  containerImage: {
     flexDirection: 'column',
     flex: 1,
     backgroundColor: 'white',
@@ -131,18 +137,18 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
   },
-  goldenText:{
+  goldenText: {
     fontFamily: 'Poppins-Regular',
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
-    textAlign: 'justify', 
+    textAlign: 'justify',
     paddingHorizontal: 10,
   },
-  textYears:{
+  textYears: {
     color: 'black',
   },
-  textKg:{
+  textKg: {
     color: 'black',
   },
   adoptButton: {
@@ -152,7 +158,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: 370,
     marginLeft: 20,
-    alignSelf: 'center', 
+    alignSelf: 'center',
   },
   adoptButtonText: {
     color: 'black',

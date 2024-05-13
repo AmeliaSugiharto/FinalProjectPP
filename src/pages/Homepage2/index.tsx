@@ -50,7 +50,7 @@ const Homepage2 = ({navigation}) => {
               style={styles.image2}
             />
             <TouchableOpacity
-              style={[styles.boxWrapper, {marginLeft: -20},{marginTop: 10}]}
+              style={[styles.boxWrapper, {marginLeft: -20}, {marginTop: 10}]}
               onPress={() => navigation.navigate('Cat2')}>
               <Text style={styles.kucing2}>BRITISH</Text>
             </TouchableOpacity>
@@ -142,7 +142,6 @@ const styles = StyleSheet.create({
   horizontalWrapper: {
     justifyContent: 'flex-start',
     paddingHorizontal: 20,
-    
   },
   box: {
     flexDirection: 'row',
@@ -223,5 +222,5 @@ const styles = StyleSheet.create({
     height: 35,
     marginLeft: 22,
     marginTop: 9,
-  }
+  },
 });

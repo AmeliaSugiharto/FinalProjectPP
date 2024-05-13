@@ -8,7 +8,7 @@ const Dog1 = ({navigation}) => {
     <View style={styles.container}>
       <View style={styles.containerImage}>
         <TouchableOpacity onPress={() => navigation.navigate('Homepage')}>
-          <BackButton/>
+          <BackButton />
         </TouchableOpacity>
         <View>
           <Image
@@ -19,7 +19,7 @@ const Dog1 = ({navigation}) => {
         <Text style={styles.dogName}>MUICK</Text>
         <View style={styles.iconContainer}>
           <View style={styles.iconContainer1}>
-            <Image source={require('../../assets/image/male.png')}/>
+            <Image source={require('../../assets/image/male.png')} />
             <Text style={styles.iconText}>Sex</Text>
           </View>
           <View style={styles.iconContainer2}>
@@ -28,16 +28,21 @@ const Dog1 = ({navigation}) => {
           </View>
           <View style={styles.iconContainer3}>
             <Text style={styles.textKg}>9 Kg </Text>
-            <Text >Weight</Text>
+            <Text>Weight</Text>
           </View>
         </View>
-        <Gap height={32}/>
+        <Gap height={32} />
         <Text style={styles.corgisText}>
-          corgis are friendly, intelligent and loyal dogs. They have unique short legs and long bodies, and they are always full of energy and love to play. Corgis are perfect for families with children, and they will always be your best friend.
+          corgis are friendly, intelligent and loyal dogs. They have unique
+          short legs and long bodies, and they are always full of energy and
+          love to play. Corgis are perfect for families with children, and they
+          will always be your best friend.
         </Text>
-        <Gap height={24}/>
+        <Gap height={24} />
         <View>
-          <TouchableOpacity style={styles.adoptButton} onPress={() => navigation.navigate('DataAdopter')}>
+          <TouchableOpacity
+            style={styles.adoptButton}
+            onPress={() => navigation.navigate('DataAdopter')}>
             <Text style={styles.adoptButtonText}>adopt now</Text>
           </TouchableOpacity>
         </View>
@@ -49,9 +54,9 @@ const Dog1 = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F9DADA', 
+    backgroundColor: '#F9DADA',
   },
-  containerImage:{
+  containerImage: {
     flexDirection: 'column',
     flex: 1,
     backgroundColor: 'white',
@@ -130,18 +135,18 @@ const styles = StyleSheet.create({
     borderLeftWidth: 0.1,
     borderRightWidth: 0.1,
   },
-  corgisText:{
+  corgisText: {
     fontFamily: 'Poppins-Regular',
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
-    textAlign: 'justify', 
+    textAlign: 'justify',
     paddingHorizontal: 10,
   },
-  textYears:{
+  textYears: {
     color: 'black',
   },
-  textKg:{
+  textKg: {
     color: 'black',
   },
   adoptButton: {
@@ -150,8 +155,7 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     alignItems: 'center',
     width: 370,
-    alignSelf: 'center', 
-
+    alignSelf: 'center',
   },
   adoptButtonText: {
     color: 'black',

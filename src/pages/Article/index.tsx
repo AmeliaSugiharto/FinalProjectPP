@@ -1,9 +1,16 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, Linking, ScrollView } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+  Linking,
+  ScrollView,
+} from 'react-native';
 
-const Article = ({ navigation }) => {
-
-  const openWebsite = (url) => {
+const Article = ({navigation}) => {
+  const openWebsite = url => {
     Linking.openURL(url);
   };
 
@@ -19,28 +26,45 @@ const Article = ({ navigation }) => {
       <View style={styles.contentContainer2}>
         <View style={styles.containerBox2}>
           <View style={styles.textPlaceholder1}>
-            <Text style={styles.placeholderText1}>Choosing the Right Pet: Cat or Dog</Text>
+            <Text style={styles.placeholderText1}>
+              Choosing the Right Pet: Cat or Dog
+            </Text>
           </View>
         </View>
         <View>
-          <TouchableOpacity onPress={() => openWebsite('https://www.purina.co.id/kucing/mendapatkan-kucing-baru/menemukan-kucing-yang-tepat/mengadopsi-anjing-atau-kucing')}>
+          <TouchableOpacity
+            onPress={() =>
+              openWebsite(
+                'https://www.purina.co.id/kucing/mendapatkan-kucing-baru/menemukan-kucing-yang-tepat/mengadopsi-anjing-atau-kucing',
+              )
+            }>
             <Image
               source={require('../../assets/image/dog1.jpg')}
               style={styles.photo2}
             />
           </TouchableOpacity>
           <View style={styles.textPlaceholder3}>
-            <Text style={styles.placeholderText3}>Active & Spacious? Dog. Busy & Compact? Cat. Cuddles? Choose your style!</Text>
+            <Text style={styles.placeholderText3}>
+              Active & Spacious? Dog. Busy & Compact? Cat. Cuddles? Choose your
+              style!
+            </Text>
           </View>
         </View>
       </View>
       <View style={styles.contentContainer3}>
         <View style={styles.containerBox3}>
           <View style={styles.textPlaceholder2}>
-            <Text style={styles.placeholderText2}>Getting a Cat or Dog is Good for Brain Health</Text>
+            <Text style={styles.placeholderText2}>
+              Getting a Cat or Dog is Good for Brain Health
+            </Text>
           </View>
         </View>
-        <TouchableOpacity onPress={() => openWebsite('https://www.kompas.id/baca/ilmiah-populer/2022/02/24/memelihara-kucing-atau-anjing-baik-bagi-kesehatan-otak')}>
+        <TouchableOpacity
+          onPress={() =>
+            openWebsite(
+              'https://www.kompas.id/baca/ilmiah-populer/2022/02/24/memelihara-kucing-atau-anjing-baik-bagi-kesehatan-otak',
+            )
+          }>
           <Image
             source={require('../../assets/image/cat2.jpg')}
             style={styles.photo3}
@@ -70,7 +94,6 @@ const Article = ({ navigation }) => {
     </ScrollView>
   );
 };
-
 
 const styles = StyleSheet.create({
   container: {
@@ -163,7 +186,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: -370,
     alignSelf: 'center',
-    justifyContent: 'center', 
+    justifyContent: 'center',
     borderBottomWidth: 5,
     borderColor: 'rgba(0, 0, 0, 0.5)',
     shadowColor: '#000',

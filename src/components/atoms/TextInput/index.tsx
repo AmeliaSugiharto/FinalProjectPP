@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View, TextInput as Input } from 'react-native';
+import {StyleSheet, Text, View, TextInput as Input} from 'react-native';
 import React from 'react';
 
-const TextInput = ({ label, placeholder }) => {
+const TextInput = ({label, placeholder}) => {
   return (
     <View>
       <Text style={styles.label}>{label}</Text>
@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
     width: 365,
     borderRadius: 10,
     borderWidth: 1,
-    
   },
 });
 
