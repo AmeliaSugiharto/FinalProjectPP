@@ -1,5 +1,6 @@
 import SplashScreen from './SplashScreen';
 import GetStarted from './GetStarted';
+import SignIn from './SignIn';
 import Homepage from './Homepage';
 import Homepage2 from './Homepage2';
 import Article from './Article';
@@ -13,6 +14,7 @@ import Ulasan from './Ulasan';
 export {
   SplashScreen,
   GetStarted,
+  SignIn,
   Homepage,
   Homepage2,
   Article,
