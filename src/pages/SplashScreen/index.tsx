@@ -1,5 +1,6 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import React, {useEffect} from 'react';
+import LogoPawP from '../../assets/icon/LogoPawP.svg';
 
 const SplashScreen = ({navigation}) => {
   useEffect(() => {
@@ -10,7 +11,7 @@ const SplashScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Image source={require('../../assets/image/Logo.png')} />
+      <LogoPawP style={styles.logo} />
       <Text style={styles.text}>PAW PALACE</Text>
     </View>
   );
@@ -24,16 +25,20 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    position: 'relative',
   },
   logo: {
     position: 'absolute',
     top: '10%',
     left: '10%',
+    fontSize: 100,
+    marginTop: 0,
+    marginLeft: -47,
   },
   text: {
     fontSize: 32,
     fontFamily: 'Poppins-SemiBold',
     color: '#E8D4CB',
-    bottom: 100,
+    marginTop: 120,
   },
 });

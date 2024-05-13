@@ -1,6 +1,6 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SplashScreen, GetStarted, SignIn, Homepage, Homepage2, Article, Profile, Dog1, Dog2, Dog3, Cat1, DataAdopter, Ulasan} from '../pages';
+import {SplashScreen, GetStarted, SignIn, SignUp, Homepage, Homepage2, Article, Profile, Dog1, Dog2, Dog3, Cat1, Cat2, cat3, DataAdopter, Ulasan} from '../pages';
 
 const Stack = createNativeStackNavigator();
 const index = () => {
@@ -19,6 +19,11 @@ const index = () => {
       <Stack.Screen
         name="SignIn"
         component={SignIn}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="SignUp"
+        component={SignUp}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -62,6 +67,16 @@ const index = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
+        name="Cat2"
+        component={Cat2}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Cat3"
+        component={Cat3}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
         name="DataAdopter"
         component={DataAdopter}
         options={{headerShown: false}}
@@ -76,3 +91,7 @@ const index = () => {
 };
 
 export default index;
+
+
+export * from './atoms';
+export * from './molecules';
