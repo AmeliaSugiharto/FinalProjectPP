@@ -1,6 +1,5 @@
-import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
+import {StyleSheet, View, Image} from 'react-native';
 import React from 'react';
-import {BackButton} from '..';
 
 const back = ({navigation}) => {
   return (
