@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import {Gap} from '../../components/atoms';
 import {BackButton} from '../../components/molecules';
-
 const Dog2 = ({navigation}) => {
   return (
     <View style={styles.container}>

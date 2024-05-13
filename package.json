@@ -8,7 +8,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "phone": "emulator -avd Medium_Phone_API_34"
+    "deva": "emulator -avd Pixel_3a_API_34"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.20",

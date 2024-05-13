@@ -51,7 +51,7 @@ const Homepage2 = ({navigation}) => {
             />
             <TouchableOpacity
               style={[styles.boxWrapper, {marginLeft: -20}, {marginTop: 10}]}
-              onPress={() => navigation.navigate('cat2')}>
+              onPress={() => navigation.navigate('Cat2')}>
               <Text style={styles.kucing2}>BRITISH</Text>
             </TouchableOpacity>
           </View>
@@ -62,7 +62,7 @@ const Homepage2 = ({navigation}) => {
             />
             <TouchableOpacity
               style={[styles.boxWrapper, {marginLeft: 15}, {marginTop: 10}]}
-              onPress={() => navigation.navigate('cat3')}>
+              onPress={() => navigation.navigate('Cat3')}>
               <Text style={styles.kucing3}>AMERICAN</Text>
             </TouchableOpacity>
           </View>
